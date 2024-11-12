@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
+  # use rails to define the CRUD routes for the Affirmation
+  # resource
+  resources :affirmations
+
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "daily#index"
 end

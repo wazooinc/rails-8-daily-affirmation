@@ -1,0 +1,15 @@
+<div class="affirmation-container">
+
+<ul class="affirmation-list">
+  <% @verses.each do |verse| %>
+  <li>
+    <p><%= verse['text'] %></p>
+    <span class="author">
+      <%= "Book: #{verse['book_name']} Chapter: #{verse['chapter']} Verse: #{verse['verse']}" %>
+    </span>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "Admin", affirmations_path %>
+</div>

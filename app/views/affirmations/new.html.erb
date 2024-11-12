@@ -1,0 +1,18 @@
+<h1>New Affirmation</h1>
+
+<%= form_with model: @affirmation do |form| %>
+  <div>
+    <%= form.label :url %><br />
+    <%= form.text_field :url %>
+  </div>
+
+  <div>
+    <%= form.label :translation %><br />
+    <%= form.text_field :translation %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
